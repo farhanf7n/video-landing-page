@@ -599,6 +599,12 @@ nav li:nth-of-type(5) {
   border-radius: unset !important;
 }
 
+.video-slider .swiper-pagination-bullet:hover {
+  border-radius: unset !important;
+  color: white !important;
+  opacity: 1 !important;
+}
+
 /* Counter Part */
 .choose-sec {
   background-image: url("../images/choose-bg.png");
@@ -965,6 +971,7 @@ ul.ind-pills li button {
 .ind-rt p {
   font-size: 18px;
   color: white;
+  text-align: left;
 }
 
 .comp-section {
@@ -983,6 +990,14 @@ ul.ind-pills li button {
 .faq-section {
   padding: 8rem 0rem;
   background: #000000;
+}
+
+.faq-section .swiper-slide {
+  background: black !important;
+}
+
+.faq-section .swiper-pagination-bullet {
+  background-color: white;
 }
 
 .faq-anchors {
@@ -1018,19 +1033,25 @@ p.faq-para {
   padding: 0px 40px;
 }
 
-.faq-part .accordion {
+.faq-part .accordion,
+ul.faq-pills {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.faq-part .accordion-item {
+.faq-part .accordion-item,
+ul.faq-pills li button {
   background: transparent;
   border-radius: 8px !important;
   border: 1px solid white !important;
+  width: 100%;
+  text-align: left;
+  color: white !important;
 }
 
-.faq-part button.accordion-button {
+.faq-part button.accordion-button,
+ul.faq-pills {
   color: white !important;
   font-size: 20px !important;
 }
@@ -1371,7 +1392,8 @@ a.e8-link {
     font-size: 50px !important;
   }
 
-  .ind-grid-wrapper {
+  .ind-grid-wrapper,
+  ul.ind-pills {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
