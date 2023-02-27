@@ -461,8 +461,8 @@ nav li:nth-of-type(5) {
   text-transform: uppercase;
   color: white;
   z-index: 99;
-  font-size: 66px;
-  width: 50%;
+  font-size: 52px;
+  width: 55%;
   float: left;
 }
 .video-bg-hero .sc-text-cstm-2 h2 {
@@ -508,6 +508,7 @@ nav li:nth-of-type(5) {
 .cd-wrap a:hover {
   background: black !important;
   color: white !important;
+  border-color: black;
 }
 
 /* Cards Section */
@@ -519,6 +520,11 @@ nav li:nth-of-type(5) {
   padding: 0px 80px;
   gap: 20px;
   height: 465px;
+}
+
+.cards-wrap .row {
+  margin: unset;
+  padding: unset;
 }
 
 .single-card-cd h1 {
@@ -895,29 +901,44 @@ h1.cs-main-heading {
   color: white;
 }
 
-.ind-grid-wrapper {
+.ind-grid-wrapper,
+ul.ind-pills {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
-.single-ind-box {
-  border: 3px solid;
-  border-image: linear-gradient(45deg, #8d47db, #4180b8) 1;
+.single-ind-box,
+ul.ind-pills li button {
+  border: 3px solid !important;
+  border-image: linear-gradient(45deg, #8d47db, #4180b8) 1 !important;
   transition-duration: 0.4s;
+  width: 100%;
 }
 
-.single-ind-box:hover {
+.single-ind-box p {
+  color: white;
+}
+
+.single-ind-box:hover,
+ul.ind-pills li button:hover {
   background: linear-gradient(to right, #8d47db 0%, #4180b8 50%) !important;
+  color: white;
 }
 
-.single-ind-box h3 {
+.single-ind-box h3,
+ul.ind-pills li button {
   padding: 71px 0px;
   color: white;
   text-align: center;
   height: 100%;
   font-size: 24px;
   margin: unset;
+
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #8d47db, #4180b8) 1;
+  transition-duration: 0.4s;
+  width: 100%;
 }
 
 .ind-rt {
@@ -927,6 +948,13 @@ h1.cs-main-heading {
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
+  padding: 0px 30px;
+}
+
+.ind-tab-content {
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 
 .ind-rt h2 {
@@ -1014,6 +1042,8 @@ p.faq-para {
 .faq-part .accordion-button:not(.collapsed) {
   background: linear-gradient(to right, #8d47db 0%, #4180b8 50%) !important;
   color: white !important;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .faq-part .accordion-button {
@@ -1250,4 +1280,141 @@ footer {
 
 a.e8-link {
   color: white;
+}
+
+/* Media Query */
+@media screen and (max-width: 1550px) {
+  .single-card-cd,
+  .single-card-heading {
+    height: 510px;
+  }
+}
+
+@media screen and (max-width: 1375px) {
+  .single-card-cd,
+  .single-card-heading {
+    height: 653px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .video-bg-hero .sc-text-cstm-2 h1 {
+    width: 100%;
+  }
+
+  .cards-wrap .row {
+    flex-wrap: wrap;
+  }
+
+  .cards-wrap .row .col-lg-4 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ind-rt {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cards-wrap .row .col-lg-4 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-bg-hero .sc-text-cstm-2 h1 {
+    font-size: 48px;
+  }
+  .cd-wrap p {
+    font-size: 30px;
+  }
+
+  .cd-wrap a {
+    padding: 12px 39px;
+  }
+
+  .single-card-heading h1 {
+    font-size: 48px;
+  }
+
+  .single-card-cd,
+  .single-card-heading {
+    height: 510px;
+  }
+
+  .swiper-slide img {
+    height: 313px;
+  }
+
+  .swiper-wrapper {
+    height: unset !important;
+  }
+
+  .choose-sec {
+    height: unset;
+    padding: 80px 50px !important;
+  }
+
+  .choose-sec .choose-wrap {
+    width: 100%;
+  }
+
+  .choose-sec marquee {
+    position: relative;
+    font-size: 48px;
+    margin-top: 32px;
+  }
+
+  .process-ct-side h1,
+  .pg-lft h1 {
+    font-size: 50px !important;
+  }
+
+  .ind-grid-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pg-lft p {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  img.shape1-04 {
+    width: 30% !important;
+  }
+
+  .list-ft-outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    column-gap: 2.5rem;
+  }
+
+  p.faq-para {
+    padding: 0px 40px;
+  }
+
+  .faq-section,
+  .form-part {
+    padding: 3rem 0rem;
+  }
+
+  footer .col-sm-6 {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav ul li a {
+    font-size: 11px;
+    transform: rotate(270deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-top-btns a {
+    padding: 7px 10px;
+  }
 }
