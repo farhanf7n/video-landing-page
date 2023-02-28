@@ -615,11 +615,10 @@ nav li:nth-of-type(5) {
   background-position: center;
   position: relative;
 
-  height: 135vh;
+  padding: 8rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 7rem;
 }
 
 .single_cout-box {
@@ -644,9 +643,6 @@ nav li:nth-of-type(5) {
 }
 
 .choose-sec marquee {
-  position: absolute;
-  bottom: 10px;
-  left: 0px;
   color: white;
   font-size: 169px;
 }
@@ -663,7 +659,8 @@ h1.cs-main-heading {
 }
 
 .choose-wrap {
-  width: 56%;
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -1451,7 +1448,54 @@ a.e8-link {
 }
 
 @media screen and (max-width: 480px) {
+  .video-bg-hero .sc-text-cstm-2 h1 {
+    font-size: 30px;
+  }
+
+  .cd-wrap p {
+    font-size: 25px;
+  }
+
+  .cd-wrap a {
+    padding: 5px 35px;
+    font-size: 16px;
+  }
+
   .nav-top-btns a {
     padding: 7px 10px;
+  }
+
+  .single-card-cd,
+  .single-card-heading {
+    height: unset;
+    padding: 49px 26px;
+  }
+
+  .video-slider .swiper-slide video {
+    object-fit: cover;
+    height: 40vh;
+    min-height: 100%;
+  }
+
+  .video-slider .swiper-slide img {
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .choose-sec {
+    height: unset;
+    padding: 80px 20px !important;
+  }
+
+  .process-cards-side {
+    padding-top: 50px;
+  }
+
+  .single-ft span {
+    font-size: 20px;
+  }
+
+  .faq-section .swiper-wrapper {
+    height: 1016px !important;
   }
 }
