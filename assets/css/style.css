@@ -1538,6 +1538,18 @@ a.e8-link {
   .faq-section .swiper-wrapper {
     height: 663px !important;
   }
+
+  .swiper-slide img,
+  .swiper-slide video {
+    height: 432px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  .swiper-slide img,
+  .swiper-slide video {
+    height: 100dvh !important;
+  }
 }
 
 @media screen and (max-width: 640px) {
