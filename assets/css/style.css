@@ -457,13 +457,15 @@ nav li:nth-of-type(5) {
 }
 
 .video-bg-hero .sc-text-cstm-2 h1 {
-  text-shadow: 5px 9px 0 rgb(0 0 0 / 15%);
-  text-transform: uppercase;
-  color: white;
   z-index: 99;
-  font-size: 52px;
   width: 55%;
   float: left;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  line-height: 44px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 42px;
 }
 .video-bg-hero .sc-text-cstm-2 h2 {
   color: white;
@@ -481,7 +483,7 @@ nav li:nth-of-type(5) {
 
 /* Company Description Section */
 .cd-section {
-  padding: 3rem 0rem;
+  padding: 6rem 0rem;
 }
 
 .cd-wrap {
@@ -493,22 +495,29 @@ nav li:nth-of-type(5) {
 }
 
 .cd-wrap p {
-  font-size: 40px;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  color: #666;
 }
 
 .cd-wrap a {
   font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  padding: 10px 25px;
+  border-radius: 10px;
   text-decoration: none;
   border: 2px solid #6b6b6b;
-  padding: 15px 53px;
-  border-radius: 30px;
   transition-duration: 0.4s;
 }
 
 .cd-wrap a:hover {
-  background: black !important;
-  color: white !important;
-  border-color: black;
+  background: linear-gradient(to right, #8d47db 0%, #4180b8 50%) !important;
+  color: white;
+  border: 2px solid white;
+  transition-duration: 0.4s;
 }
 
 /* Cards Section */
@@ -517,9 +526,10 @@ nav li:nth-of-type(5) {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 80px;
   gap: 20px;
-  height: 465px;
+  height: 100%;
+  width: 100%;
+  padding: 115px 90px;
 }
 
 .cards-wrap .row {
@@ -538,18 +548,19 @@ nav li:nth-of-type(5) {
 }
 
 .single-card-heading {
-  height: 465px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  width: 100%;
+  padding: 115px 90px;
 }
 
 .single-card-heading h1 {
   color: white;
-  font-size: 56px;
-  font-weight: 700;
-  letter-spacing: -2px;
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: 900;
 }
 
 .single-card-cd .head-ct {
@@ -558,9 +569,26 @@ nav li:nth-of-type(5) {
   gap: 2rem;
 }
 
+.single-card-cd .head-ct h3 {
+  color: #666;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.single-card-cd .head-ct img {
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: contain;
+  width: 99px;
+  height: 99px;
+}
+
 .single-card-cd p {
-  font-size: 21px;
   font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
 }
 
 /* Video Slider Section*/
@@ -577,6 +605,22 @@ nav li:nth-of-type(5) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.video-slider .swiper-slide video {
+  height: 100%;
+  object-fit: cover;
+}
+
+.someMarquee {
+  color: white;
+  font-size: 30px;
+  padding-top: 4rem;
+}
+
+.someMarquee div {
+  color: white;
+  font-size: 82px;
 }
 
 .swiper-slide img {
@@ -634,12 +678,15 @@ nav li:nth-of-type(5) {
 }
 
 .single_cout-box span {
-  font-size: 26px;
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 400;
 }
 
 .single_cout-box h1 {
-  font-size: 56px;
-  font-weight: 700;
+  font-size: 42px;
+  line-height: 30px;
+  font-weight: lighter;
 }
 
 .choose-sec marquee {
@@ -647,15 +694,28 @@ nav li:nth-of-type(5) {
   font-size: 169px;
 }
 
-.single_cs-ct p,
 .single_cs-ct h4 {
   font-size: 24px;
   color: white;
+  font-weight: 600;
+}
+
+.single_cs-ct p {
+  font-weight: 400;
+  color: #ababab;
+
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 30px;
+  max-width: 95%;
+  margin-top: 18px;
 }
 
 h1.cs-main-heading {
-  font-size: 56px;
-  color: white;
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .choose-wrap {
@@ -675,6 +735,10 @@ h1.cs-main-heading {
   align-items: flex-start !important;
 }
 
+.contact-section p {
+  text-align: left !important;
+}
+
 .contact-wrap p {
   color: white !important;
 }
@@ -684,6 +748,11 @@ h1.cs-main-heading {
   background: white !important;
   color: #ab22ef;
   border: unset;
+  border: 2px solid white;
+}
+
+.contact-wrap a:hover {
+  color: white !important;
 }
 
 /* Process Section */
@@ -693,12 +762,16 @@ h1.cs-main-heading {
 }
 
 .process-ct-side h1 {
-  font-size: 71px;
-  font-weight: 700;
+  font-size: 42px;
+  line-height: 40px;
+  font-weight: bold;
 }
 
 .process-ct-side p {
-  font-size: 22px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
 }
 
 .process-cards-side {
@@ -707,7 +780,6 @@ h1.cs-main-heading {
   flex-wrap: wrap;
   gap: 5rem;
   justify-content: center;
-  padding-top: 120px;
 }
 
 .single_cover-box {
@@ -733,11 +805,6 @@ h1.cs-main-heading {
   aspect-ratio: 3/2;
   object-fit: contain;
   mix-blend-mode: color-burn;
-}
-
-.single_cover-box .icon img:last-child {
-  width: 110px;
-  height: 98px;
 }
 
 .single_cover-box::before {
@@ -823,20 +890,25 @@ h1.cs-main-heading {
 }
 
 .pg-lft h1 {
-  font-size: 71px;
+  font-size: 42px;
+  line-height: 40px;
+  font-weight: bold;
   color: white;
 }
 
 .pg-lft p {
   color: white;
-  font-size: 30px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .pg-lft a,
 .ind-rt a {
-  font-size: 21px;
+  font-size: 15px;
+  line-height: 23px;
   text-decoration: none;
-  padding: 10px 35px;
+  padding: 5px 23px;
   border-radius: 30px;
   transition-duration: 0.4s;
   color: white;
@@ -845,7 +917,8 @@ h1.cs-main-heading {
 }
 
 .single-ft span {
-  font-size: 30px;
+  font-size: 18px;
+  line-height: 23px;
   color: white;
 }
 
@@ -884,12 +957,13 @@ h1.cs-main-heading {
 
 /* Animation Section */
 .animation-section {
-  background-image: url("../images/animation-bg.png");
+  /* background-image: url("../images/animation-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
   object-position: center;
-  background-position: center;
+  background-position: center; */
+  background-color: #000000;
   position: relative;
   padding: 8rem 0rem;
 }
@@ -902,6 +976,9 @@ h1.cs-main-heading {
 
 .ind-lft h1 {
   color: white;
+  font-size: 42px;
+  line-height: 40px;
+  font-weight: bold;
 }
 
 .ind-grid-wrapper,
@@ -919,6 +996,16 @@ ul.ind-pills li button {
   width: 100%;
 }
 
+ul.ind-pills li button {
+  font-size: 18px;
+  font-weight: 400;
+  margin: unset;
+  height: 100%;
+  text-align: center;
+  padding: 71px 0px;
+  color: white;
+}
+
 .single-ind-box p {
   color: white;
 }
@@ -929,8 +1016,7 @@ ul.ind-pills li button:hover {
   color: white;
 }
 
-.single-ind-box h3,
-ul.ind-pills li button {
+.single-ind-box h3 {
   padding: 71px 0px;
   color: white;
   text-align: center;
@@ -961,13 +1047,16 @@ ul.ind-pills li button {
 }
 
 .ind-rt h2 {
-  font-size: 24px;
+  font-size: 26px;
+  line-height: 30px;
   color: white;
 }
 
 .ind-rt p {
+  font-weight: 400;
+  color: #ababab;
   font-size: 18px;
-  color: white;
+  line-height: 22px;
   text-align: left;
 }
 
@@ -1272,6 +1361,7 @@ footer {
   display: flex;
   gap: 0.5rem;
   border-radius: 8px;
+  flex-wrap: wrap;
 }
 
 .social-links img:hover {
@@ -1332,6 +1422,11 @@ a.e8-link {
   .cards-wrap .row .col-lg-4 {
     width: 50%;
   }
+
+  .someMarquee div {
+    color: white;
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1343,6 +1438,11 @@ a.e8-link {
 @media screen and (max-width: 800px) {
   .cards-wrap .row .col-lg-4 {
     width: 100%;
+  }
+
+  .someMarquee div {
+    color: white;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1444,6 +1544,11 @@ a.e8-link {
   nav ul li a {
     font-size: 11px;
     transform: rotate(270deg);
+  }
+
+  .someMarquee div {
+    color: white;
+    font-size: 20px;
   }
 }
 

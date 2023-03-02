@@ -144,3 +144,34 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+$(document).ready(function () {
+  $(".someMarquee").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    speed: 15000,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1250,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 3,
+        },
+      },
+
+      {
+        breakpoint: 200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
