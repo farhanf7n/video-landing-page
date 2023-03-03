@@ -574,14 +574,15 @@ nav li:nth-of-type(5) {
   font-size: 26px;
   line-height: 28px;
   font-weight: bold;
+  margin: unset;
 }
 
 .single-card-cd .head-ct img {
   max-width: 100%;
   vertical-align: middle;
-  object-fit: contain;
+  /* object-fit: contain;
   width: 99px;
-  height: 99px;
+  height: 99px; */
 }
 
 .single-card-cd p {
@@ -758,7 +759,7 @@ h1.cs-main-heading {
 /* Process Section */
 
 .process-sec {
-  padding: 5rem 0rem;
+  padding: 10rem 0rem;
 }
 
 .process-ct-side h1 {
