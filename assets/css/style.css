@@ -520,6 +520,30 @@ nav li:nth-of-type(5) {
   transition-duration: 0.4s;
 }
 
+.cta-btn {
+  margin: 40px 0px 0px 41px;
+}
+
+.cta-btn a {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid white;
+  transition-duration: 0.4s;
+  color: white;
+  background: linear-gradient(to right, #8d47db 0%, #4180b8 50%) !important;
+}
+
+.cta-btn a:hover {
+  background: white !important;
+  border: 2px solid #8d47db;
+  transition-duration: 0.4s;
+  color: #8d47db;
+}
 /* Cards Section */
 .single-card-cd {
   background-color: white;
