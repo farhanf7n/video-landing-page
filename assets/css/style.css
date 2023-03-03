@@ -521,10 +521,12 @@ nav li:nth-of-type(5) {
 }
 
 .cta-btn {
-  margin: 40px 0px 0px 41px;
+  margin: 0px 0px 0px 0px;
 }
 
 .cta-btn a {
+  display: inline-block;
+  font-weight: bold;
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0px;
@@ -805,6 +807,7 @@ h1.cs-main-heading {
   flex-wrap: wrap;
   gap: 5rem;
   justify-content: center;
+  height: 100%;
 }
 
 .single_cover-box {
