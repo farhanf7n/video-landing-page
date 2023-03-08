@@ -502,14 +502,15 @@ nav li:nth-of-type(5) {
 }
 
 .cd-wrap a {
-  font-size: 20px;
-  line-height: 25px;
+  color: #ab22ef;
+  font-size: 15px;
+  line-height: 23px;
   letter-spacing: 0px;
-  font-weight: 400;
-  padding: 10px 25px;
-  border-radius: 10px;
+  padding: 10px 40px;
+  border-radius: 35px;
   text-decoration: none;
   border: 2px solid #6b6b6b;
+  font-weight: 600;
   transition-duration: 0.4s;
 }
 
@@ -522,9 +523,10 @@ nav li:nth-of-type(5) {
 
 .cta-btn {
   margin: 0px 0px 0px 0px;
+  align-items: flex-start;
 }
 
-.cta-btn a {
+/* .cta-btn a {
   display: inline-block;
   font-weight: bold;
   font-size: 14px;
@@ -538,14 +540,14 @@ nav li:nth-of-type(5) {
   transition-duration: 0.4s;
   color: white;
   background: linear-gradient(to right, #8d47db 0%, #4180b8 50%) !important;
-}
+} */
 
-.cta-btn a:hover {
+/* .cta-btn a:hover {
   background: white !important;
   border: 2px solid #8d47db;
   transition-duration: 0.4s;
   color: #8d47db;
-}
+} */
 /* Cards Section */
 .single-card-cd {
   background-color: white;
@@ -604,7 +606,7 @@ nav li:nth-of-type(5) {
 }
 
 .single-card-cd .head-ct h3 {
-  color: #666;
+  color: #000000;
   font-size: 26px;
   line-height: 28px;
   font-weight: bold;
@@ -653,9 +655,21 @@ nav li:nth-of-type(5) {
   padding-top: 4rem;
 }
 
-.someMarquee div {
-  color: white;
-  font-size: 82px;
+.someMarquee span {
+  background-image: linear-gradient(
+    135deg,
+    #008aff 0%,
+    #0078ff 30%,
+    #be00d4 66%,
+    #ba00ee 100%
+  ) !important;
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: 130px;
 }
 
 .swiper-slide img {
@@ -700,15 +714,22 @@ nav li:nth-of-type(5) {
 }
 
 .single_cout-box {
-  border: 1px solid;
   display: flex;
   color: white;
-  border-image: linear-gradient(45deg, #8d47db, #4180b8) 1;
+  border: 5px solid !important;
+  border-image: linear-gradient(
+      135deg,
+      #008aff 0%,
+      #0078ff 30%,
+      #be00d4 66%,
+      #ba00ee 100%
+    )
+    1 !important;
+  border-radius: 8px !important;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 40px 0px;
-  border-radius: 10px;
 }
 
 .single_cout-box span {
@@ -753,8 +774,8 @@ h1.cs-main-heading {
 }
 
 .choose-wrap {
-  width: 80%;
-  margin: auto;
+  width: 50%;
+  margin-left: 18.5rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -899,7 +920,7 @@ h1.cs-main-heading {
 .list-ft-outer {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 1rem;
+  grid-gap: 1rem 5rem;
   padding-top: 20px;
 }
 
@@ -1479,6 +1500,11 @@ a.e8-link {
 
 /* Media Query */
 @media screen and (max-width: 1550px) {
+  .choose-wrap {
+    width: 84%;
+    margin: auto;
+  }
+
   .single-card-cd,
   .single-card-heading {
     height: 510px;
@@ -1495,6 +1521,10 @@ a.e8-link {
 @media screen and (max-width: 1200px) {
   .video-bg-hero .sc-text-cstm-2 h1 {
     width: 100%;
+  }
+
+  .someMarquee span {
+    font-size: 70px;
   }
 
   .cards-wrap .row {
@@ -1514,6 +1544,10 @@ a.e8-link {
 @media screen and (max-width: 992px) {
   .ind-rt {
     padding-top: 50px;
+  }
+
+  .someMarquee span {
+    font-size: 50px;
   }
 }
 
@@ -1625,6 +1659,10 @@ a.e8-link {
   .swiper-slide video {
     height: 432px;
   }
+
+  .someMarquee span {
+    font-size: 37px;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 480px) {
@@ -1696,5 +1734,9 @@ a.e8-link {
 
   .faq-section .swiper-wrapper {
     height: 1016px !important;
+  }
+
+  .someMarquee span {
+    font-size: 22px;
   }
 }
