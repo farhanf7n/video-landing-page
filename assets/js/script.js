@@ -149,7 +149,7 @@ $(document).ready(function () {
   $(".someMarquee").slick({
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 3,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
@@ -161,7 +161,7 @@ $(document).ready(function () {
         breakpoint: 1250,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 3,
+          slidesToScroll: 2,
         },
       },
 
