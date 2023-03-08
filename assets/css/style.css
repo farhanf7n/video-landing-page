@@ -570,7 +570,15 @@ nav li:nth-of-type(5) {
 }
 
 .single-card-gr {
-  background: linear-gradient(to right, #8d47db 0%, #4180b8 50%) !important;
+  /* background: linear-gradient(to right, #8d47db 0%, #4180b8 50%) !important; */
+  background-color: #008aff;
+  background-image: linear-gradient(
+    135deg,
+    #008aff 0%,
+    #0078ff 30%,
+    #be00d4 66%,
+    #ba00ee 100%
+  );
 }
 
 .single-card-heading {
@@ -685,8 +693,7 @@ nav li:nth-of-type(5) {
   object-position: center;
   background-position: center;
   position: relative;
-
-  padding: 8rem 0rem;
+  padding: 8rem 0rem 2rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1016,12 +1023,44 @@ ul.ind-pills {
   gap: 1rem;
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #008aff !important;
+  background-image: linear-gradient(
+    135deg,
+    #008aff 0%,
+    #0078ff 30%,
+    #be00d4 66%,
+    #ba00ee 100%
+  ) !important;
+  border: 5px solid !important;
+  border-image: linear-gradient(
+      135deg,
+      #008aff 0%,
+      #0078ff 30%,
+      #be00d4 66%,
+      #ba00ee 100%
+    )
+    1 !important;
+}
+
 .single-ind-box,
 ul.ind-pills li button {
   border: 3px solid !important;
-  border-image: linear-gradient(45deg, #8d47db, #4180b8) 1 !important;
   transition-duration: 0.4s;
   width: 100%;
+}
+
+ul.ind-pills li button {
+  border: 5px solid !important;
+  border-image: linear-gradient(
+      135deg,
+      #008aff 0%,
+      #0078ff 30%,
+      #be00d4 66%,
+      #ba00ee 100%
+    )
+    1 !important;
 }
 
 ul.ind-pills li button {
@@ -1038,9 +1077,20 @@ ul.ind-pills li button {
   color: white;
 }
 
+ul.ind-pills li button {
+  border-radius: 8px !important;
+}
+
 .single-ind-box:hover,
 ul.ind-pills li button:hover {
-  background: linear-gradient(to right, #8d47db 0%, #4180b8 50%) !important;
+  background-color: #008aff !important;
+  background-image: linear-gradient(
+    135deg,
+    #008aff 0%,
+    #0078ff 30%,
+    #be00d4 66%,
+    #ba00ee 100%
+  ) !important;
   color: white;
 }
 
@@ -1095,8 +1145,12 @@ ul.ind-pills li button:hover {
 .comp-logo {
   display: flex;
   justify-content: center;
-  height: 140px;
+  /* height: 140px; */
   align-items: center;
+}
+
+.comp-logo img {
+  width: 100%;
 }
 
 /* FAQ Section */
