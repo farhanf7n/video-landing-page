@@ -695,9 +695,12 @@ nav li:nth-of-type(5) {
   font-size: 24px;
   padding: 12px 24px;
   border: none;
-  background-color: #007bff;
-  color: #fff;
+  background: unset;
   cursor: pointer;
+}
+
+.video-slider #play-button .video-toggle {
+  transition: all 0.2s ease-in-out;
 }
 
 .swiper-pagination-bullet-active {

@@ -183,9 +183,7 @@ const button = document.getElementById("play-button");
 button.addEventListener("click", () => {
   if (video.paused) {
     video.play();
-    button.textContent = "Pause";
   } else {
     video.pause();
-    button.textContent = "Play";
   }
 });
