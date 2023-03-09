@@ -203,3 +203,34 @@ function togglePlayPause() {
     video.play();
   }
 }
+
+const video2 = document.getElementById("my-video2");
+
+function togglePlayPause2() {
+  var icon = document.getElementById("playPauseIcon2");
+  if (icon.alt === "play") {
+    icon.src = "/images/pauseButton.png";
+    icon.alt = "pause";
+    video2.pause();
+  } else {
+    video.play();
+    icon.src = "/images/playButton.png";
+    icon.alt = "play";
+    video2.play();
+  }
+}
+
+const video3 = document.getElementById("my-video3");
+
+function togglePlayPause3() {
+  var icon = document.getElementById("playPauseIcon3");
+  if (icon.alt === "play") {
+    icon.src = "/images/pauseButton.png";
+    icon.alt = "pause";
+    video3.pause();
+  } else {
+    icon.src = "/images/playButton.png";
+    icon.alt = "play";
+    video3.play();
+  }
+}
