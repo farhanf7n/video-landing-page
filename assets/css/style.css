@@ -687,6 +687,11 @@ nav li:nth-of-type(5) {
   background-color: #a1a1a1 !important;
 }
 
+#playPauseIcon {
+  width: 150px;
+  height: 150px;
+}
+
 .video-slider #play-button {
   position: absolute;
   top: 50%;

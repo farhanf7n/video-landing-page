@@ -177,13 +177,29 @@ $(document).ready(function () {
 });
 
 // Slider Video Play Button
-const video = document.getElementById("my-video");
-const button = document.getElementById("play-button");
+// const video = document.getElementById("my-video");
+// const button = document.getElementById("play-button");
+// const image = button.querySelector("img");
 
-button.addEventListener("click", () => {
-  if (video.paused) {
-    video.play();
-  } else {
+// button.addEventListener("click", () => {
+//   if (video.paused) {
+//     video.play();
+//   } else {
+//     video.pause();
+//   }
+// });
+
+const video = document.getElementById("my-video");
+function togglePlayPause() {
+  var icon = document.getElementById("playPauseIcon");
+  if (icon.alt === "play") {
+    icon.src = "/images/pauseButton.png";
+    icon.alt = "pause";
     video.pause();
+  } else {
+    video.play();
+    icon.src = "/images/playButton.png";
+    icon.alt = "play";
+    video.play();
   }
-});
+}

@@ -289,8 +289,12 @@
                 Your browser does not support the video tag.
               </video>
               <!-- Video Play Button -->
-              <button id="play-button">
-                <img src="./assets/images/play-button.png" alt="Image 1" />
+              <button id="play-button" onclick="togglePlayPause()">
+                <img
+                  id="playPauseIcon"
+                  src="./assets/images/playButton.png"
+                  alt="Image 1"
+                />
               </button>
             </div>
 
@@ -320,7 +324,10 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="single_cs-ct" data-aos="fade-up" data-aos-delay="100">
-              <h4>Experienced Team</h4>
+              <h4>
+                Experienced <br />
+                Team
+              </h4>
               <p>
                 Our video production company in dubai comprises skilled
                 videographers, editors, and producers who have years of
