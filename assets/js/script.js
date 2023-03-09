@@ -175,3 +175,17 @@ $(document).ready(function () {
     ],
   });
 });
+
+// Slider Video Play Button
+const video = document.getElementById("my-video");
+const button = document.getElementById("play-button");
+
+button.addEventListener("click", () => {
+  if (video.paused) {
+    video.play();
+    button.textContent = "Pause";
+  } else {
+    video.pause();
+    button.textContent = "Play";
+  }
+});
